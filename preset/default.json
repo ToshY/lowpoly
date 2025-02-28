@@ -1,0 +1,37 @@
+{
+    "type": [
+        "delaunay",
+        "voronoi"
+    ],
+    "seed": 42,
+    "canny": {
+        "threshold": {
+            "min": 20,
+            "max": 100
+        }
+    },
+    "grayscale": {
+        "threshold": {
+            "min": 0,
+            "max": 255
+        }
+    },
+    "points": {
+        "add": {
+            "factor": 10000
+        },
+        "reduce": {
+            "factor": 50
+        }
+    },
+    "output": {
+        "resolution": 8000,
+        "mega_pixel_constraint": null,
+        "svg": {
+            "preserveAspectRatio": "xMidYMid meet",
+            "style": {
+                "shape-rendering": "crispEdges"
+            }
+        }
+    }
+}
