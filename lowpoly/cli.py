@@ -140,7 +140,7 @@ def cli(
                 canny_binary_image,
                 current_preset_points["add"]["factor"],
                 current_preset_points["reduce"]["factor"],
-                current_preset.get("seed", 42),
+                current_preset.get("seed", None),
             )
 
             # %% create polygons

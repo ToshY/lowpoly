@@ -108,7 +108,7 @@ class PolygonMaker:
         binary_image,
         middle_addition_factor: int = 10,
         edges_reduction_factor: int = 50,
-        seed: int = 42,
+        seed: int | None = None,
     ):
         """Add more corner, edge, and middle points"""
 
