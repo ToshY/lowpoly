@@ -12,27 +12,29 @@ docker run -it --rm \
   ghcr.io/toshy/lowpoly:latest
 ```
 
-By default, it will find all files from the `/app/input` directory (recursively) and write the output to the `/app/output` directory. If
-no presets are provided, it will automatically use the [`preset/default.json`](presets.md#default).
+* By default, it will find all files from the `/app/input` directory (recursively) and write the output to the `/app/output` directory.
+* If no presets are provided, it will automatically use the [`preset/default.json`](presets.md#default).
 
-<div style="display: flex; justify-content: space-between;">
+<div markdown="span" style="display: flex; justify-content: space-between;">
     <figure style="width: 33%; text-align: center;">
-        <img src="/images/input.jpeg" alt="Image 1" style="width: 100%; height: auto;">
+        ![input.jpeg](images/input.jpeg){ width="100%" height=auto }
         <figcaption style="margin-top: 5px;"><code>input/input.jpeg</code></figcaption>
     </figure>
     <figure style="width: 33%; text-align: center;">
-        <img src="/images/delaunay.png" alt="Image 2" style="width: 100%; height: auto;">
+        ![delaunay.png](images/delaunay.png){ width="100%" height=auto }
         <figcaption style="margin-top: 5px;"><code>output/input_delaunay_<%d-%m-%Y_%H-%M-%S-%f>.png</code></figcaption>
     </figure>
     <figure style="width: 33%; text-align: center;">
-        <img src="/images/voronoi.png" alt="Image 3" style="width: 100%; height: auto;">
+        ![voronoi.png](images/voronoi.png){ width="100%" height=auto }
         <figcaption style="margin-top: 5px;"><code>output/input_voronoi_<%d-%m-%Y_%H-%M-%S-%f>.png</code></figcaption>
     </figure>
 </div>
 
 !!! note
 
-    By default, if no explicit `-e/--extension` argument is provided, both SVG and PNG output files will be created.
+    - By default, if no explicit `-e/--extension` argument is provided, both SVG and PNG output files will be created.
+    - By default, output file names contain datetime in format `%d-%m-%Y_%H-%M-%S-%f`. You can disable this behavior by
+      passing the `--no-unique-filename` argument.
 
 ## Specific file
 

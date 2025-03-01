@@ -1,5 +1,6 @@
 site_name: LowPoly
 site_description: A command-line utility for converting images to low polygon variants.
+site_url: https://toshy.github.io/lowpoly
 repo_name: ToshY/lowpoly
 repo_url: https://github.com/ToshY/lowpoly
 docs_dir: docs/
