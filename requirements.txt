@@ -1,7 +1,7 @@
-loguru==0.7.3
-click==8.1.8
+loguru>=0.7
+click>=8.2,<9.0
 opencv-python-headless==4.11.0.86
-Shapely==2.0.7
-CairoSVG==2.7.1
-numpy==2.2.3
-scipy==1.15.2
+Shapely>=2.0,<3.0
+CairoSVG>=2.7,<3.0
+numpy>=2.3,<3.0
+scipy>=1.16,<2.0
